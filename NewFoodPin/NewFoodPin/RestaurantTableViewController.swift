@@ -61,17 +61,29 @@ class RestaurantTableViewController: UITableViewController {
         let callAction = UIAlertAction(title: "Call " + "123-000-\(indexPath.row)", style:
             UIAlertActionStyle.Destructive, handler: callActionHandler)
         
-        optionMenu.addAction(callAction)
+        
         
         let isVistedAction = UIAlertAction(title: "I've here", style: .Default, handler: {(action: UIAlertAction!) -> Void in
                 let cell = tableView.cellForRowAtIndexPath(indexPath)
                 cell?.accessoryType = .Checkmark
-                
+                tableView.deselectRowAtIndexPath(indexPath, animated: false)
             })
+        
+        optionMenu.addAction(callAction)
         optionMenu.addAction(isVistedAction)
         self.presentViewController(optionMenu, animated: true, completion: nil)
     }
     
+    
+    override func tableView(tableView: UITableView, commitEditingStyle editingStyle:
+                UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        if editingStyle == .Delete {
+            // Delete the row from the data source
+            self.restaurantNames.removeAtIndex(indexPath.row)
+            self.restaurantImages.removeAtIndex(indexPath.row)
+            self.tableView?.deleteRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.Top)
+        }
+    }
 
     /*
     // Override to support conditional editing of the table view.
