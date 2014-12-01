@@ -85,7 +85,9 @@ class RestaurantTableViewController: UITableViewController {
         }
     }
     
-    override func tableView(tableView: UITableView, editActionsForRowAtIndexPath indexPath:
+    // 滑动按钮之后 更多的action
+    
+     override func tableView(tableView: UITableView, editActionsForRowAtIndexPath indexPath:
         NSIndexPath) -> [AnyObject] {
         var shareAction = UITableViewRowAction(style: UITableViewRowActionStyle.Default, title:
         "Share", handler: { (action:UITableViewRowAction!, indexPath:NSIndexPath!) -> Void in
@@ -115,6 +117,10 @@ class RestaurantTableViewController: UITableViewController {
         self.tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
         }
         )
+        shareAction.backgroundColor = UIColor(red: 255.0/255.0, green: 166.0/255.0, blue:
+        51.0/255.0, alpha: 1.0)
+        deleteAction.backgroundColor = UIColor(red: 51.0/255.0, green: 51.0/255.0, blue:
+        51.0/255.0, alpha: 1.0)
         return [deleteAction, shareAction]
     }
 
