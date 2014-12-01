@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		F9B7D1661A2AA3C700026829 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B7D1651A2AA3C700026829 /* AppDelegate.swift */; };
 		F9B7D1691A2AA3C700026829 /* NewFoodPin.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F9B7D1671A2AA3C700026829 /* NewFoodPin.xcdatamodeld */; };
-		F9B7D16B1A2AA3C700026829 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B7D16A1A2AA3C700026829 /* ViewController.swift */; };
 		F9B7D16E1A2AA3C700026829 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9B7D16C1A2AA3C700026829 /* Main.storyboard */; };
 		F9B7D1701A2AA3C700026829 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9B7D16F1A2AA3C700026829 /* Images.xcassets */; };
 		F9B7D1731A2AA3C700026829 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9B7D1711A2AA3C700026829 /* LaunchScreen.xib */; };
 		F9B7D17F1A2AA3C700026829 /* NewFoodPinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B7D17E1A2AA3C700026829 /* NewFoodPinTests.swift */; };
+		F9B7D18B1A2AA7C100026829 /* RestaurantTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B7D18A1A2AA7C100026829 /* RestaurantTableViewController.swift */; };
+		F9B7D18D1A2AFEC200026829 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B7D18C1A2AFEC200026829 /* CustomTableViewCell.swift */; };
+		F9B7D18F1A2B5CF600026829 /* listen_katong.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = F9B7D18E1A2B5CF600026829 /* listen_katong.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,13 +33,15 @@
 		F9B7D1641A2AA3C700026829 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F9B7D1651A2AA3C700026829 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F9B7D1681A2AA3C700026829 /* NewFoodPin.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NewFoodPin.xcdatamodel; sourceTree = "<group>"; };
-		F9B7D16A1A2AA3C700026829 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F9B7D16D1A2AA3C700026829 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F9B7D16F1A2AA3C700026829 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F9B7D1721A2AA3C700026829 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		F9B7D1781A2AA3C700026829 /* NewFoodPinTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewFoodPinTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9B7D17D1A2AA3C700026829 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F9B7D17E1A2AA3C700026829 /* NewFoodPinTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewFoodPinTests.swift; sourceTree = "<group>"; };
+		F9B7D18A1A2AA7C100026829 /* RestaurantTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewController.swift; sourceTree = "<group>"; };
+		F9B7D18C1A2AFEC200026829 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		F9B7D18E1A2B5CF600026829 /* listen_katong.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = listen_katong.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,12 +84,14 @@
 			isa = PBXGroup;
 			children = (
 				F9B7D1651A2AA3C700026829 /* AppDelegate.swift */,
-				F9B7D16A1A2AA3C700026829 /* ViewController.swift */,
 				F9B7D16C1A2AA3C700026829 /* Main.storyboard */,
 				F9B7D16F1A2AA3C700026829 /* Images.xcassets */,
+				F9B7D18E1A2B5CF600026829 /* listen_katong.jpeg */,
 				F9B7D1711A2AA3C700026829 /* LaunchScreen.xib */,
 				F9B7D1671A2AA3C700026829 /* NewFoodPin.xcdatamodeld */,
 				F9B7D1631A2AA3C700026829 /* Supporting Files */,
+				F9B7D18A1A2AA7C100026829 /* RestaurantTableViewController.swift */,
+				F9B7D18C1A2AFEC200026829 /* CustomTableViewCell.swift */,
 			);
 			path = NewFoodPin;
 			sourceTree = "<group>";
@@ -195,6 +201,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9B7D18F1A2B5CF600026829 /* listen_katong.jpeg in Resources */,
 				F9B7D16E1A2AA3C700026829 /* Main.storyboard in Resources */,
 				F9B7D1731A2AA3C700026829 /* LaunchScreen.xib in Resources */,
 				F9B7D1701A2AA3C700026829 /* Images.xcassets in Resources */,
@@ -215,8 +222,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9B7D16B1A2AA3C700026829 /* ViewController.swift in Sources */,
 				F9B7D1691A2AA3C700026829 /* NewFoodPin.xcdatamodeld in Sources */,
+				F9B7D18B1A2AA7C100026829 /* RestaurantTableViewController.swift in Sources */,
+				F9B7D18D1A2AFEC200026829 /* CustomTableViewCell.swift in Sources */,
 				F9B7D1661A2AA3C700026829 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -409,6 +417,7 @@
 				F9B7D1841A2AA3C700026829 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F9B7D1851A2AA3C700026829 /* Build configuration list for PBXNativeTarget "NewFoodPinTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +426,7 @@
 				F9B7D1871A2AA3C700026829 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
