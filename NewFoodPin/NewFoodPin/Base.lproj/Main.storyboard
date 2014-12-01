@@ -46,6 +46,7 @@
                                     <outlet property="nameLabel" destination="lbp-rA-ruA" id="ZGz-xK-wDg"/>
                                     <outlet property="thumbnailImageView" destination="Fv9-m5-atk" id="i4c-Ov-0Vr"/>
                                     <outlet property="typeLabel" destination="7D2-0e-gBz" id="OfS-KT-cde"/>
+                                    <segue destination="BWj-2e-FfR" kind="push" id="Df0-B9-qDg"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -78,6 +79,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="wn1-0m-JQP"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Un8-ah-16j" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

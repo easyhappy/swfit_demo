@@ -48,7 +48,7 @@ class RestaurantTableViewController: UITableViewController {
         return cell
     }
     
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath){
+    /*override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath){
         let optionMenu = UIAlertController(title: nil, message: "Are you sure?", preferredStyle: .Alert)
         let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel, handler: nil)
         optionMenu.addAction(cancelAction)
@@ -72,7 +72,7 @@ class RestaurantTableViewController: UITableViewController {
         optionMenu.addAction(callAction)
         optionMenu.addAction(isVistedAction)
         self.presentViewController(optionMenu, animated: true, completion: nil)
-    }
+    }*/
     
     
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle:
