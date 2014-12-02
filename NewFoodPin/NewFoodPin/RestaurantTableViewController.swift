@@ -12,6 +12,27 @@ class RestaurantTableViewController: UITableViewController {
 
     var restaurantNames = ["Cafe Deadend", "andyhu", "Teakha", "Cafe Loisl", "Petite Oyster"]
     var restaurantImages = ["cafedeadend.jpg", "homei.jpg", "teakha.jpg", "cafeloisl.jpg","petiteoyster.jpg"]
+    
+    var restaurants:[Restaurant] = [
+        Restaurant(name: "Cafe Deadend", type: "Coffee & Tea Shop", location: "Hong Kong",image: "cafedeadend.jpg", isVisited: false),
+        Restaurant(name: "Homei", type: "Cafe", location: "Hong Kong", image: "homei.jpg",isVisited: false),
+        Restaurant(name: "Teakha", type: "Tea House", location: "Hong Kong", image:
+        "teakha.jpg", isVisited: false),
+        Restaurant(name: "Cafe loisl", type: "Austrian / Causual Drink", location: "Hong Kong",image: "cafeloisl.jpg", isVisited: false),
+        Restaurant(name: "Petite Oyster", type: "French", location: "Hong Kong", image:
+        "petiteoyster.jpg", isVisited: false),
+        Restaurant(name: "For Kee Restaurant", type: "Bakery", location: "Hong Kong", image: "forkeerestaurant.jpg", isVisited: false),
+        Restaurant(name: "Po's Atelier", type: "Bakery", location: "Hong Kong", image:
+        "posatelier.jpg", isVisited: false),
+        Restaurant(name: "Bourke Street Backery", type: "Chocolate", location: "Sydney", image:"bourkestreetbakery.jpg", isVisited: false),
+        Restaurant(name: "Haigh's Chocolate", type: "Cafe", location: "Sydney", image:
+        "haighschocolate.jpg", isVisited: false),
+        Restaurant(name: "Palomino Espresso", type: "American / Seafood", location: "Sydney",image: "palominoespresso.jpg", isVisited: false),
+        Restaurant(name: "Upstate", type: "American", location: "New York", image:
+        "upstate.jpg", isVisited: false),
+        Restaurant(name: "Traif", type: "American", location: "New York", image: "traif.jpg",isVisited: false),
+        Restaurant(name: "Graham Avenue Meats", type: "Breakfast & Brunch", location: "NewYork", image: "grahamavenuemeats.jpg", isVisited: false)
+        ]
         
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,7 +53,8 @@ class RestaurantTableViewController: UITableViewController {
         if segue.identifier == "showRestaurantDetail"{
             if let indexPath = self.tableView.indexPathForSelectedRow() {
                 let destinationController = segue.destinationViewController as DetailViewController
-                destinationController.restaurantImage = self.restaurantImages[indexPath.row]
+                destinationController.restaurantImage = "listen_katong.jpeg"
+                destinationController.restaurant = restaurants[indexPath.row]
             }
         }
     }
@@ -42,14 +64,14 @@ class RestaurantTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete method implementation.
         // Return the number of rows in the section.
-        return restaurantNames.count
+        return restaurants.count
     }
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as CustomTableViewCell
         
-        cell.nameLabel.text = restaurantNames[indexPath.row]
+        cell.nameLabel.text = restaurants[indexPath.row].name
         cell.thumbnailImageView.image = UIImage(named: "listen_katong.jpeg")
         cell.thumbnailImageView.layer.cornerRadius = cell.thumbnailImageView.frame.size.width / 2
         cell.thumbnailImageView.clipsToBounds = true
@@ -88,8 +110,7 @@ class RestaurantTableViewController: UITableViewController {
                 UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if editingStyle == .Delete {
             // Delete the row from the data source
-            self.restaurantNames.removeAtIndex(indexPath.row)
-            self.restaurantImages.removeAtIndex(indexPath.row)
+            self.restaurants.removeAtIndex(indexPath.row)
             self.tableView?.deleteRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.Top)
         }
     }
@@ -121,8 +142,7 @@ class RestaurantTableViewController: UITableViewController {
         var deleteAction = UITableViewRowAction(style: UITableViewRowActionStyle.Default,
         title: "Delete",handler: { (action:UITableViewRowAction!, indexPath:NSIndexPath!) -> Void in
         // Delete the row from the data source
-        self.restaurantNames.removeAtIndex(indexPath.row)
-        self.restaurantImages.removeAtIndex(indexPath.row)
+        self.restaurants.removeAtIndex(indexPath.row)
         self.tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
         }
         )
