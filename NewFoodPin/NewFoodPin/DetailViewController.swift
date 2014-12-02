@@ -24,9 +24,7 @@ class DetailViewController: UIViewController, UITableViewDataSource, UITableView
         self.tableView.separatorColor = UIColor(red:
                 240.0/255.0, green: 240.0/255.0, blue: 10/255.0,
                 alpha: 0.8)
-        UINavigationBar.appearance().barTintColor = UIColor(red:
-                    231.0/255.0, green: 95.0/255.0, blue: 53.0/255.0, alpha: 0.3)
-        
+        title = self.restaurant.name
         //RestaurantImageView.image = UIImage(named: "listen_katong.jpeg")
     }
 

@@ -55,7 +55,7 @@
                             <outlet property="delegate" destination="Clu-9N-Zsr" id="CIG-N2-1oD"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="FoodPin" id="rVG-ZC-SC6"/>
+                    <navigationItem key="navigationItem" title="FoodPin" id="rVG-ZC-SC6" colorLabel="IBBuiltInLabel-Green"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fnG-dY-s5i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
