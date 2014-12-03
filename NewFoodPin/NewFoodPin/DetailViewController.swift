@@ -33,6 +33,12 @@ class DetailViewController: UIViewController, UITableViewDataSource, UITableView
         // Dispose of any resources that can be recreated.
     }
     
+//    override func viewWillAppear(animated: Bool) {
+//        super.viewWillAppear(animated)
+//        self.navigationController?.hidesBarsOnSwipe = false
+//        self.navigationController?.setNavigationBarHidden(false, animated: true)
+//    }
+    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 4
     }
@@ -59,8 +65,7 @@ class DetailViewController: UIViewController, UITableViewDataSource, UITableView
         }
             return cell
     }
-    
-    
+
 
     /*
     // MARK: - Navigation
