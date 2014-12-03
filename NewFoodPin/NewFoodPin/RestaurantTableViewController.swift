@@ -172,6 +172,11 @@ class RestaurantTableViewController: UITableViewController {
         51.0/255.0, alpha: 1.0)
         return [deleteAction, shareAction]
     }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.hidesBarsOnSwipe  = true
+    }
 
     /*
     // Override to support conditional editing of the table view.

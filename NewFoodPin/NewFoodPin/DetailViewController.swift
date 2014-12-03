@@ -66,6 +66,11 @@ class DetailViewController: UIViewController, UITableViewDataSource, UITableView
             return cell
     }
 
+    override func viewWillAppear(animated: Bool) {
+      super.viewWillAppear(animated)
+      self.navigationController?.hidesBarsOnSwipe = false
+      self.navigationController?.setNavigationBarHidden(false, animated: true)
+    }
 
     /*
     // MARK: - Navigation
