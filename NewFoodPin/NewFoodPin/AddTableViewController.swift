@@ -7,10 +7,12 @@
 //
 
 import UIKit
+import CoreData
 
 class AddTableViewController: UITableViewController,UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     @IBOutlet weak var imageView: UIImageView!
+    var restaurant:Restaurant!
     
     override func viewDidLoad() {
         super.viewDidLoad()

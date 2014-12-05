@@ -58,7 +58,7 @@ class DetailViewController: UIViewController, UITableViewDataSource, UITableView
             cell.valueLabel.text = restaurant.location
         case 3:
             cell.fieldLabel.text = "Been here"
-            cell.valueLabel.text = (restaurant.isVisited) ? "Yes, I’ve been here before" : "No"
+            cell.valueLabel.text = "Yes, I’ve been here before"
         default:
             cell.fieldLabel.text = ""
             cell.valueLabel.text = "hhhhh"
