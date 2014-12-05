@@ -19,6 +19,8 @@
 		F9B7D18D1A2AFEC200026829 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B7D18C1A2AFEC200026829 /* CustomTableViewCell.swift */; };
 		F9B7D18F1A2B5CF600026829 /* listen_katong.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = F9B7D18E1A2B5CF600026829 /* listen_katong.jpeg */; };
 		F9B7D1931A2CBD5900026829 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B7D1921A2CBD5900026829 /* DetailViewController.swift */; };
+		F9C5B0C41A31504E00BA71E5 /* AddTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C5B0C31A31504E00BA71E5 /* AddTableViewController.swift */; };
+		F9FCD0771A30721F007FEB58 /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FCD0761A30721F007FEB58 /* ReviewViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		F9B7D18C1A2AFEC200026829 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		F9B7D18E1A2B5CF600026829 /* listen_katong.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = listen_katong.jpeg; sourceTree = "<group>"; };
 		F9B7D1921A2CBD5900026829 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		F9C5B0C31A31504E00BA71E5 /* AddTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTableViewController.swift; sourceTree = "<group>"; };
+		F9FCD0761A30721F007FEB58 /* ReviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,8 @@
 				F922E4E81A2D25B1007CBA9B /* Restaurant.swift */,
 				F9B7D1921A2CBD5900026829 /* DetailViewController.swift */,
 				F95357271A2D56CD006102A9 /* DetailTableViewCell.swift */,
+				F9FCD0761A30721F007FEB58 /* ReviewViewController.swift */,
+				F9C5B0C31A31504E00BA71E5 /* AddTableViewController.swift */,
 			);
 			path = NewFoodPin;
 			sourceTree = "<group>";
@@ -236,7 +242,9 @@
 				F95357281A2D56CD006102A9 /* DetailTableViewCell.swift in Sources */,
 				F922E4E91A2D25B1007CBA9B /* Restaurant.swift in Sources */,
 				F9B7D1931A2CBD5900026829 /* DetailViewController.swift in Sources */,
+				F9C5B0C41A31504E00BA71E5 /* AddTableViewController.swift in Sources */,
 				F9B7D18D1A2AFEC200026829 /* CustomTableViewCell.swift in Sources */,
+				F9FCD0771A30721F007FEB58 /* ReviewViewController.swift in Sources */,
 				F9B7D1661A2AA3C700026829 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

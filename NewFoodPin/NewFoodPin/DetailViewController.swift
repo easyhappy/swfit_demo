@@ -65,6 +65,9 @@ class DetailViewController: UIViewController, UITableViewDataSource, UITableView
         }
             return cell
     }
+    
+    @IBAction func close(segue:UIStoryboardSegue) {
+    }
 
     override func viewWillAppear(animated: Bool) {
       super.viewWillAppear(animated)
