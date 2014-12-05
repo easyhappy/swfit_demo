@@ -39,6 +39,11 @@ class AddTableViewController: UITableViewController,UIImagePickerControllerDeleg
         
     }
     
+    func navigationController(navigationController: UINavigationController!,
+            willShowViewController viewController: UIViewController!, animated: Bool) {
+            UIApplication.sharedApplication().setStatusBarStyle(.LightContent, animated: false)
+    }
+    
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath:
         NSIndexPath) {
         if indexPath.row == 0 {

@@ -93,8 +93,10 @@ class RestaurantTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as CustomTableViewCell
         
+        var restaurant:Restaurant = restaurants[indexPath.row]
+        
         cell.nameLabel.text = restaurants[indexPath.row].name
-        cell.thumbnailImageView.image = UIImage(named: "listen_katong.jpeg")
+        cell.thumbnailImageView.image = UIImage(data: restaurant.image)
         cell.thumbnailImageView.layer.cornerRadius = cell.thumbnailImageView.frame.size.width / 2
         cell.thumbnailImageView.clipsToBounds = true
         cell.accessoryType = .DisclosureIndicator
