@@ -10,12 +10,13 @@ import UIKit
 import CoreData
 
 class AddTableViewController: UITableViewController,UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-
+    
     @IBOutlet weak var imageView: UIImageView!
     var restaurant:Restaurant!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -27,6 +28,21 @@ class AddTableViewController: UITableViewController,UIImagePickerControllerDeleg
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    @IBAction func save(sender: AnyObject) {
+        let managedObjectContext = (UIApplication.sharedApplication().delegate as
+            AppDelegate).managedObjectContext
+        self.restaurant = NSEntityDescription.insertNewObjectForEntityForName("Restaurant",
+                inManagedObjectContext: managedObjectContext!) as Restaurant
+        restaurant.image = UIImagePNGRepresentation(imageView.image)
+        restaurant.name = "aaaaa"
+        var e: NSError?
+        if(managedObjectContext?.save(&e) == true){
+            println("yes save success")
+        }
+        return 
+    
     }
     
     

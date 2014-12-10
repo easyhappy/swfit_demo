@@ -7,16 +7,28 @@
 //
 
 import UIKit
+import CoreData
+import Foundation
+import AVFoundation
+import AVKit
 
-class RestaurantTableViewController: UITableViewController {
+class RestaurantTableViewController: UITableViewController, NSFetchedResultsControllerDelegate, UISearchBarDelegate, UISearchControllerDelegate , UISearchResultsUpdating{
 
     var restaurantNames = ["Cafe Deadend", "andyhu", "Teakha", "Cafe Loisl", "Petite Oyster"]
     var restaurantImages = ["cafedeadend.jpg", "homei.jpg", "teakha.jpg", "cafeloisl.jpg","petiteoyster.jpg"]
     
     var restaurants:[Restaurant] = []
-        
+    var searchController: UISearchController!
+    var searchResults:[Restaurant] = []
+    var moviePlayer: AVPlayerViewController
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        searchController = UISearchController(searchResultsController: nil)
+        searchController.searchResultsUpdater = self
+        searchController.searchBar.sizeToFit()
+        tableView.tableHeaderView = searchController.searchBar
+        definesPresentationContext = true
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -24,13 +36,39 @@ class RestaurantTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .Plain, target: nil, action: nil)
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.whiteColor()];
-        
+        if let managedObjectContext = (UIApplication.sharedApplication().delegate as
+            AppDelegate).managedObjectContext {
+            let fetchRequest = NSFetchRequest(entityName: "Restaurant")
+            var e: NSError?
+            restaurants = managedObjectContext.executeFetchRequest(fetchRequest, error: &e) as
+                [Restaurant]
+            if e != nil {
+                println("Failed to retrieve record: \(e!.localizedDescription)")
+            }
+        }
     }
 
-    
+    func updateSearchResultsForSearchController(searchController: UISearchController) {
+        let searchText = searchController.searchBar.text
+        filterContentForSearchText(searchText)
+        tableView.reloadData()
+    }
+    @IBAction func close(segue:UIStoryboardSegue) {
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+
+    
+    func filterContentForSearchText(searchText: String) {
+        searchResults = restaurants.filter({ ( restaurant: Restaurant) -> Bool in
+        restaurant.name = "jjjjj"
+        let nameMatch = restaurant.name.rangeOfString(searchText, options:
+        NSStringCompareOptions.CaseInsensitiveSearch)
+        return nameMatch != nil
+        265
+        })
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!){
@@ -48,15 +86,20 @@ class RestaurantTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete method implementation.
         // Return the number of rows in the section.
-        return restaurants.count
+            if searchController.active {
+                    return searchResults.count
+                } else {
+                    return self.restaurants.count
+            }
     }
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as CustomTableViewCell
         
-        var restaurant:Restaurant = restaurants[indexPath.row]
-        
+        //var restaurant:Restaurant = restaurants[indexPath.row]
+        let restaurant = (searchController.active) ? searchResults[indexPath.row] :
+                restaurants[indexPath.row]
         cell.nameLabel.text = restaurants[indexPath.row].name
         cell.thumbnailImageView.image = UIImage(data: restaurant.image)
         cell.thumbnailImageView.layer.cornerRadius = cell.thumbnailImageView.frame.size.width / 2

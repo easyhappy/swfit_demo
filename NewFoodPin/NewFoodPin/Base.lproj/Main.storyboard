@@ -184,12 +184,6 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fOa-SU-lbf">
-                                <rect key="frame" x="230" y="397" width="64" height="64"/>
-                                <state key="normal" image="great">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JHV-Qv-XKi">
                                 <rect key="frame" x="247" y="33" width="30" height="30"/>
                                 <state key="normal" image="close">
@@ -202,6 +196,12 @@
                                     <segue destination="x9k-wB-UFs" kind="unwind" unwindAction="close:" id="a26-Q7-Zwl"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fOa-SU-lbf">
+                                <rect key="frame" x="235" y="397" width="64" height="64"/>
+                                <state key="normal" image="great">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -213,6 +213,14 @@
                 <exit id="x9k-wB-UFs" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1397" y="257"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="jDX-4O-Vj0">
+            <objects>
+                <pageViewController storyboardIdentifier="PageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="ZqV-Ud-l06" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B8X-e5-mRf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1735" y="257"/>
         </scene>
         <!--Add Table View Controller-->
         <scene sceneID="rRI-4G-dOc">
@@ -336,8 +344,20 @@ EENhbmNlbA
                                 </state>
                             </button>
                             <connections>
-                                <segue destination="you-1t-FX9" kind="unwind" unwindAction="close:" id="aol-rZ-Zje"/>
+                                <segue destination="you-1t-FX9" kind="unwind" unwindAction="close:" id="1mB-Tw-eYA"/>
                             </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="3sp-6a-rIn">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="oKM-jc-W0G">
+                                <rect key="frame" x="-23" y="-15" width="71" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="save:" destination="QJy-W9-1BJ" eventType="touchUpInside" id="Wzl-jz-G3w"/>
+                                </connections>
+                            </button>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
