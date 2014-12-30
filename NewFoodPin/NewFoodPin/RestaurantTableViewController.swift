@@ -20,7 +20,7 @@ class RestaurantTableViewController: UITableViewController, NSFetchedResultsCont
     var restaurants:[Restaurant] = []
     var searchController: UISearchController!
     var searchResults:[Restaurant] = []
-    var moviePlayer: AVPlayerViewController
+    var moviePlayer: AVPlayerViewController = AVPlayerViewController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
