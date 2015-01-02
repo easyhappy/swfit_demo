@@ -1,0 +1,14 @@
+PODS:
+  - RBStoryboardLink (0.1.2)
+
+DEPENDENCIES:
+  - RBStoryboardLink (from `https://github.com/zhfish/RBStoryboardLink.git`)
+
+EXTERNAL SOURCES:
+  RBStoryboardLink:
+    :git: https://github.com/zhfish/RBStoryboardLink.git
+
+SPEC CHECKSUMS:
+  RBStoryboardLink: b6043d3a342df762d5d04e58a12a24988de85385
+
+COCOAPODS: 0.35.0

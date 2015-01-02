@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>306AEF31-985D-48F8-BE08-82030604B368</string>
+	<key>IDESourceControlProjectName</key>
+	<string>RBStoryboardLinkDemo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>B19A7CAD11BDA3D655F688DBC3DDA07292A34465</key>
+		<string>github.com:MartinLi841538513/RBStoryboardLinkDemo.git</string>
+		<key>D75A86891C5A91F10E5CABA29E5CFAC103798293</key>
+		<string>github.com:easyhappy/swfit_demo.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>RBStoryboardLinkDemo.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>B19A7CAD11BDA3D655F688DBC3DDA07292A34465</key>
+		<string>..</string>
+		<key>D75A86891C5A91F10E5CABA29E5CFAC103798293</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:MartinLi841538513/RBStoryboardLinkDemo.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>B19A7CAD11BDA3D655F688DBC3DDA07292A34465</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D75A86891C5A91F10E5CABA29E5CFAC103798293</string>
+			<key>IDESourceControlWCCName</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>B19A7CAD11BDA3D655F688DBC3DDA07292A34465</string>
+			<key>IDESourceControlWCCName</key>
+			<string>RBStoryboardLinkDemo</string>
+		</dict>
+	</array>
+</dict>
+</plist>
