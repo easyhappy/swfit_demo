@@ -67,7 +67,7 @@ class RestaurantTableViewController: UITableViewController, NSFetchedResultsCont
         let nameMatch = restaurant.name.rangeOfString(searchText, options:
         NSStringCompareOptions.CaseInsensitiveSearch)
         return nameMatch != nil
-        265
+        
         })
     }
     

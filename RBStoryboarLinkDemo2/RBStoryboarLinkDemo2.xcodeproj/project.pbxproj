@@ -15,11 +15,11 @@
 		F96E47D11A569C9800100E3A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F96E47D01A569C9800100E3A /* Images.xcassets */; };
 		F96E47D41A569C9800100E3A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F96E47D21A569C9800100E3A /* LaunchScreen.xib */; };
 		F96E47E01A569C9800100E3A /* RBStoryboarLinkDemo2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96E47DF1A569C9800100E3A /* RBStoryboarLinkDemo2Tests.swift */; };
-		F96E47EA1A569CB300100E3A /* one.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F96E47E91A569CB300100E3A /* one.storyboard */; };
-		F96E47EC1A569CBA00100E3A /* two.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F96E47EB1A569CBA00100E3A /* two.storyboard */; };
-		F96E47EE1A569FE000100E3A /* three.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F96E47ED1A569FE000100E3A /* three.storyboard */; };
-		F96E47F01A56DA6000100E3A /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F96E47EF1A56DA6000100E3A /* 1.jpg */; };
-		F96E47F21A56FAFA00100E3A /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = F96E47F11A56FAFA00100E3A /* 2.png */; };
+		F96E47EA1A569CB300100E3A /* news.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F96E47E91A569CB300100E3A /* news.storyboard */; };
+		F96E47EC1A569CBA00100E3A /* video.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F96E47EB1A569CBA00100E3A /* video.storyboard */; };
+		F96E47F41A57C83100100E3A /* VideoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96E47F31A57C83100100E3A /* VideoTableViewController.swift */; };
+		F96E47F61A57CC8000100E3A /* HttpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96E47F51A57CC8000100E3A /* HttpController.swift */; };
+		F96E47F81A58D3C100100E3A /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96E47F71A58D3C100100E3A /* VideoTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,11 +47,11 @@
 		F96E47D91A569C9800100E3A /* RBStoryboarLinkDemo2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RBStoryboarLinkDemo2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F96E47DE1A569C9800100E3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F96E47DF1A569C9800100E3A /* RBStoryboarLinkDemo2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RBStoryboarLinkDemo2Tests.swift; sourceTree = "<group>"; };
-		F96E47E91A569CB300100E3A /* one.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = one.storyboard; sourceTree = "<group>"; };
-		F96E47EB1A569CBA00100E3A /* two.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = two.storyboard; sourceTree = "<group>"; };
-		F96E47ED1A569FE000100E3A /* three.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = three.storyboard; sourceTree = "<group>"; };
-		F96E47EF1A56DA6000100E3A /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
-		F96E47F11A56FAFA00100E3A /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		F96E47E91A569CB300100E3A /* news.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = news.storyboard; sourceTree = "<group>"; };
+		F96E47EB1A569CBA00100E3A /* video.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = video.storyboard; sourceTree = "<group>"; };
+		F96E47F31A57C83100100E3A /* VideoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoTableViewController.swift; sourceTree = "<group>"; };
+		F96E47F51A57CC8000100E3A /* HttpController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpController.swift; sourceTree = "<group>"; };
+		F96E47F71A58D3C100100E3A /* VideoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,15 +108,15 @@
 				F96E47C61A569C9800100E3A /* AppDelegate.swift */,
 				F96E47CB1A569C9800100E3A /* ViewController.swift */,
 				F96E47CD1A569C9800100E3A /* Main.storyboard */,
-				F96E47F11A56FAFA00100E3A /* 2.png */,
 				F96E47D01A569C9800100E3A /* Images.xcassets */,
 				F96E47D21A569C9800100E3A /* LaunchScreen.xib */,
 				F96E47C81A569C9800100E3A /* RBStoryboarLinkDemo2.xcdatamodeld */,
-				F96E47EF1A56DA6000100E3A /* 1.jpg */,
 				F96E47C41A569C9800100E3A /* Supporting Files */,
-				F96E47E91A569CB300100E3A /* one.storyboard */,
-				F96E47EB1A569CBA00100E3A /* two.storyboard */,
-				F96E47ED1A569FE000100E3A /* three.storyboard */,
+				F96E47E91A569CB300100E3A /* news.storyboard */,
+				F96E47EB1A569CBA00100E3A /* video.storyboard */,
+				F96E47F31A57C83100100E3A /* VideoTableViewController.swift */,
+				F96E47F71A58D3C100100E3A /* VideoTableViewCell.swift */,
+				F96E47F51A57CC8000100E3A /* HttpController.swift */,
 			);
 			path = RBStoryboarLinkDemo2;
 			sourceTree = "<group>";
@@ -238,12 +238,9 @@
 			files = (
 				F96E47CF1A569C9800100E3A /* Main.storyboard in Resources */,
 				F96E47D41A569C9800100E3A /* LaunchScreen.xib in Resources */,
-				F96E47F21A56FAFA00100E3A /* 2.png in Resources */,
-				F96E47EC1A569CBA00100E3A /* two.storyboard in Resources */,
-				F96E47EE1A569FE000100E3A /* three.storyboard in Resources */,
+				F96E47EC1A569CBA00100E3A /* video.storyboard in Resources */,
 				F96E47D11A569C9800100E3A /* Images.xcassets in Resources */,
-				F96E47EA1A569CB300100E3A /* one.storyboard in Resources */,
-				F96E47F01A56DA6000100E3A /* 1.jpg in Resources */,
+				F96E47EA1A569CB300100E3A /* news.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +294,9 @@
 				F96E47CC1A569C9800100E3A /* ViewController.swift in Sources */,
 				F96E47C71A569C9800100E3A /* AppDelegate.swift in Sources */,
 				F96E47CA1A569C9800100E3A /* RBStoryboarLinkDemo2.xcdatamodeld in Sources */,
+				F96E47F61A57CC8000100E3A /* HttpController.swift in Sources */,
+				F96E47F41A57C83100100E3A /* VideoTableViewController.swift in Sources */,
+				F96E47F81A58D3C100100E3A /* VideoTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

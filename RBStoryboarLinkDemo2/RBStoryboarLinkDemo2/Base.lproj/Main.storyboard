@@ -4,11 +4,11 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
+        <!--视频-->
         <scene sceneID="OPq-2B-uEL">
             <objects>
                 <navigationController id="oMN-B4-B1J" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="favorites" id="rbK-kq-qAF" userLabel="11111111111111"/>
+                    <tabBarItem key="tabBarItem" title="视频" image="icon_pin_00160" id="rbK-kq-qAF" userLabel="视频"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="H3V-TG-XHh">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -35,7 +35,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="pUC-z3-SLA"/>
                     <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="string" keyPath="storyboardName" value="two"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="storyboardName" value="video"/>
                     </userDefinedRuntimeAttributes>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OEk-zL-szn" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -61,14 +61,14 @@
             </objects>
             <point key="canvasLocation" x="-675" y="407"/>
         </scene>
-        <!--啊啊啊-->
+        <!--新闻-->
         <scene sceneID="3ZE-Y8-bks">
             <objects>
                 <navigationController id="vgh-Ot-9ab" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" tag="4" title="啊啊啊" image="icon_pin_00160" id="tVA-Dh-NWi" userLabel="飒飒是">
+                    <tabBarItem key="tabBarItem" tag="4" title="新闻" image="icon_pin_00160" id="tVA-Dh-NWi">
                         <inset key="imageInsets" minX="30" minY="0.0" maxX="30" maxY="0.0"/>
                     </tabBarItem>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vbo-lC-rbA">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vbo-lC-rbA" userLabel="新闻">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -94,7 +94,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="CfB-zV-aFz"/>
                     <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="string" keyPath="storyboardName" value="one"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="storyboardName" value="news"/>
                     </userDefinedRuntimeAttributes>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xys-we-p7F" userLabel="First Responder" sceneMemberID="firstResponder"/>
