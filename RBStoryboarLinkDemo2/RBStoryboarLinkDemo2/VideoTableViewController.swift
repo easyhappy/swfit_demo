@@ -77,7 +77,7 @@ class VideoTableViewController: UITableViewController, HttpProtocol {
         if segue.identifier == "showVideoDetail"{
             if let indexPath = self.tableView.indexPathForSelectedRow() {
                 let destinationController = segue.destinationViewController as VideoDetailViewController
-                
+                destinationController.gameVideo = self.tableData[indexPath.row] as NSDictionary
             }
         }
     }

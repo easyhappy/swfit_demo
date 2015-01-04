@@ -9,11 +9,15 @@
 import UIKit
 
 class VideoDetailViewController: UIViewController {
-
+    var gameVideo:NSDictionary!;
+    
+    @IBOutlet weak var videoTitle: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
+        self.videoTitle.text = (self.gameVideo["title"] as String)
     }
 
     override func didReceiveMemoryWarning() {
