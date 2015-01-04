@@ -72,6 +72,15 @@ class VideoTableViewController: UITableViewController, HttpProtocol {
 
         return cell
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!){
+        if segue.identifier == "showVideoDetail"{
+            if let indexPath = self.tableView.indexPathForSelectedRow() {
+                let destinationController = segue.destinationViewController as VideoDetailViewController
+                
+            }
+        }
+    }
 
 
     /*

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AFCEA1734D89410976169E88 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DFB9ACD04752F626C6A6D795 /* libPods.a */; };
+		F929991B1A59340000EB0ED0 /* VideoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F929991A1A59340000EB0ED0 /* VideoDetailViewController.swift */; };
 		F96E47C71A569C9800100E3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96E47C61A569C9800100E3A /* AppDelegate.swift */; };
 		F96E47CA1A569C9800100E3A /* RBStoryboarLinkDemo2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F96E47C81A569C9800100E3A /* RBStoryboarLinkDemo2.xcdatamodeld */; };
 		F96E47CC1A569C9800100E3A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96E47CB1A569C9800100E3A /* ViewController.swift */; };
@@ -36,6 +37,7 @@
 		04C583E97C514F66FAE536F1 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		602FF4F0BF44A31904520984 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		DFB9ACD04752F626C6A6D795 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F929991A1A59340000EB0ED0 /* VideoDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoDetailViewController.swift; sourceTree = "<group>"; };
 		F96E47C11A569C9800100E3A /* RBStoryboarLinkDemo2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RBStoryboarLinkDemo2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F96E47C51A569C9800100E3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F96E47C61A569C9800100E3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				F96E47F31A57C83100100E3A /* VideoTableViewController.swift */,
 				F96E47F71A58D3C100100E3A /* VideoTableViewCell.swift */,
 				F96E47F51A57CC8000100E3A /* HttpController.swift */,
+				F929991A1A59340000EB0ED0 /* VideoDetailViewController.swift */,
 			);
 			path = RBStoryboarLinkDemo2;
 			sourceTree = "<group>";
@@ -292,6 +295,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F96E47CC1A569C9800100E3A /* ViewController.swift in Sources */,
+				F929991B1A59340000EB0ED0 /* VideoDetailViewController.swift in Sources */,
 				F96E47C71A569C9800100E3A /* AppDelegate.swift in Sources */,
 				F96E47CA1A569C9800100E3A /* RBStoryboarLinkDemo2.xcdatamodeld in Sources */,
 				F96E47F61A57CC8000100E3A /* HttpController.swift in Sources */,

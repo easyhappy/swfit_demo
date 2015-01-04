@@ -13,7 +13,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="game_videos" rowHeight="80" id="OVZ-jJ-Jqw" customClass="VideoTableViewCell" customModule="RBStoryboarLinkDemo2" customModuleProvider="target">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="game_videos" rowHeight="80" id="OVZ-jJ-Jqw" customClass="VideoTableViewCell" customModule="RBStoryboarLinkDemo2" customModuleProvider="target">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OVZ-jJ-Jqw" id="80t-PS-UHN">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -50,7 +50,7 @@
                                 <connections>
                                     <outlet property="imgView" destination="S9i-o0-EmY" id="2D2-GT-a3f"/>
                                     <outlet property="videoTitle" destination="pwx-nl-ASw" id="hdK-Zn-VdZ"/>
-                                    <segue destination="tU1-0N-Q40" kind="show" id="fJQ-dc-Mm7"/>
+                                    <segue destination="9df-hL-NH7" kind="push" identifier="showVideoDetail" id="0HJ-uk-c6C"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -69,44 +69,23 @@
             </objects>
             <point key="canvasLocation" x="1651.5" y="136"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="MAe-8g-Hi5">
+        <!--Video Detail View Controller-->
+        <scene sceneID="Y3l-c8-Jdr">
             <objects>
-                <viewController id="tU1-0N-Q40" sceneMemberID="viewController">
+                <viewController id="9df-hL-NH7" customClass="VideoDetailViewController" customModule="RBStoryboarLinkDemo2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="SQQ-ht-gbD"/>
-                        <viewControllerLayoutGuide type="bottom" id="UXr-8l-V2w"/>
+                        <viewControllerLayoutGuide type="top" id="OFf-fM-atW"/>
+                        <viewControllerLayoutGuide type="bottom" id="OsD-pr-401"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="yUt-rX-SJH">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <view key="view" contentMode="scaleToFill" id="zGq-nk-hvk">
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1GX-Ei-NlD">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="44" y="220" width="42" height="21"/>
-                                </variation>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="1GX-Ei-NlD"/>
-                            </mask>
-                        </variation>
-                        <variation key="widthClass=compact">
-                            <mask key="subviews">
-                                <include reference="1GX-Ei-NlD"/>
-                            </mask>
-                        </variation>
                     </view>
+                    <navigationItem key="navigationItem" id="PsZ-7d-8Nk"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="QAU-hZ-Wem" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H9M-li-Fpv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2325" y="141"/>
+            <point key="canvasLocation" x="2412" y="141"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Mk5-Tv-fBI">
