@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     var videoTimeObserver: AnyObject!
     @IBOutlet weak var playVideoButton: UIButton!
     @IBOutlet weak var seeker: UISlider!
-    
+    @IBOutlet var singleTap: UITapGestureRecognizer!
     override func viewDidLoad() {
         super.viewDidLoad()
         let url = NSURL(string: "http://edge.v.iask.com.sinastorage.com/136681867.mp4")
@@ -31,6 +31,10 @@ class ViewController: UIViewController {
                 self.syncSeekber()
         })
         self.seeker.setValue(0, animated: true)
+//        var tapGesture = UITapGestureRecognizer(target: self, action: "hidePlayerMenu")
+//        //设置手势点击数,双击：点2下
+//        tapGesture.numberOfTapsRequired = 1
+//        self.view.addGestureRecognizer(tapGesture)
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -62,6 +66,10 @@ class ViewController: UIViewController {
             self.videoPlayer.pause()
         }
         syncPlayPauseButtonImage()
+    }
+
+    @IBAction func hidePlayerMenu(){
+        println("是的")
     }
     
     func syncPlayPauseButtonImage() {

@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -20,6 +21,10 @@
                             <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="mjO-ym-2ex" customClass="AVPlayerView" customModule="MineAvPlayerDemo" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="YPE-Vh-Bwo" appends="YES" id="Hm5-En-jOZ"/>
+                                </connections>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZHv-Pb-KMA">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -38,6 +43,7 @@
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="centerX" secondItem="ARD-AL-CXZ" secondAttribute="centerX" id="15a-bM-62l"/>
                                     <constraint firstItem="ARD-AL-CXZ" firstAttribute="top" secondItem="MGg-Xj-UW3" secondAttribute="bottom" constant="20" id="3fO-yh-5AU"/>
@@ -112,17 +118,17 @@
                                 <exclude reference="ZHv-Pb-KMA"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="0Dn-UV-8UT"/>
-                                <exclude reference="9dE-4H-Enx"/>
-                                <exclude reference="HVf-bH-3MQ"/>
-                                <exclude reference="IPs-0J-SJZ"/>
-                                <exclude reference="JnW-Az-y1n"/>
+                                <exclude reference="RoR-Cd-RbM"/>
                                 <exclude reference="3dZ-uh-fZA"/>
                                 <exclude reference="MR6-Oo-esW"/>
                                 <exclude reference="Sg0-I8-vGa"/>
                                 <exclude reference="nsu-h6-NDe"/>
                                 <exclude reference="vzB-L4-PWL"/>
-                                <exclude reference="RoR-Cd-RbM"/>
+                                <exclude reference="0Dn-UV-8UT"/>
+                                <exclude reference="9dE-4H-Enx"/>
+                                <exclude reference="HVf-bH-3MQ"/>
+                                <exclude reference="IPs-0J-SJZ"/>
+                                <exclude reference="JnW-Az-y1n"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -131,17 +137,17 @@
                                 <include reference="ZHv-Pb-KMA"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="0Dn-UV-8UT"/>
-                                <include reference="9dE-4H-Enx"/>
-                                <include reference="HVf-bH-3MQ"/>
-                                <include reference="IPs-0J-SJZ"/>
-                                <include reference="JnW-Az-y1n"/>
+                                <include reference="RoR-Cd-RbM"/>
                                 <include reference="3dZ-uh-fZA"/>
                                 <include reference="MR6-Oo-esW"/>
                                 <include reference="Sg0-I8-vGa"/>
                                 <include reference="nsu-h6-NDe"/>
                                 <include reference="vzB-L4-PWL"/>
-                                <include reference="RoR-Cd-RbM"/>
+                                <include reference="0Dn-UV-8UT"/>
+                                <include reference="9dE-4H-Enx"/>
+                                <include reference="HVf-bH-3MQ"/>
+                                <include reference="IPs-0J-SJZ"/>
+                                <include reference="JnW-Az-y1n"/>
                             </mask>
                         </variation>
                     </view>
@@ -149,9 +155,15 @@
                         <outlet property="playVideoButton" destination="ARD-AL-CXZ" id="2I5-b7-cju"/>
                         <outlet property="playerView" destination="mjO-ym-2ex" id="8mF-km-b63"/>
                         <outlet property="seeker" destination="MGg-Xj-UW3" id="ynQ-Sv-NRo"/>
+                        <outlet property="singleTap" destination="YPE-Vh-Bwo" id="Y9R-XI-8hg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="YPE-Vh-Bwo" userLabel="hideMenu">
+                    <connections>
+                        <action selector="hidePlayerMenu" destination="vXZ-lx-hvc" id="tun-UT-ZyE"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="238.5" y="-85"/>
         </scene>
